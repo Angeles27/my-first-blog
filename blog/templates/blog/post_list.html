@@ -7,6 +7,17 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>  
     <body>
+
+        <style>
+            h1 a, h2 a {
+                color: #C25100;
+            }
+
+            body {
+                padding-left: 15px;
+            }
+        </style>
+
         <div>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
@@ -22,16 +33,6 @@
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
-
-        <style>
-            h1 a, h2 a {
-                color: #C25100;
-            }
-
-            body {
-                padding-left: 15px;
-            }
-        </style>
         
     {% for post in posts %}
         <div>
